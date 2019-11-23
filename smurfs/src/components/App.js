@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import axios from 'axios';
 import FormContext from '../contexts';
+import SmurfContext from '../contexts/SmurfContext';
 
 const App = () => {
 return (
