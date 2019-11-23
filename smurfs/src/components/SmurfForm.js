@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import FormContext from "./contexts/FormContext.js";
+import FormContext from "../contexts/FormContext";
 
 const SmurfForm = () => {
   const { formValue, handleChanges, newSmurf } = useContext(FormContext);
