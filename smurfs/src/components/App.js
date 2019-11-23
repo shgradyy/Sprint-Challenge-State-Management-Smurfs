@@ -8,6 +8,13 @@ import SmurfList from './SmurfList';
 
 const App = () => {
 
+  const [smurfList, setSmurfList] = useState([]);
+  const [formValue, setFormValue] = useState({
+    name: "",
+    age: "",
+    height: "",
+    id: ""
+  });
 
   
 return (
