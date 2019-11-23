@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import './App.scss';
 import axios from 'axios';
-import FormContext from '../contexts';
+import FormContext from '../contexts/FormContext';
 import SmurfContext from '../contexts/SmurfContext';
 import SmurfForm from './SmurfForm';
 import SmurfList from './SmurfList';

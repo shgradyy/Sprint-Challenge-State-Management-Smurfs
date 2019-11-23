@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import SmurfContext from "./contexts/SmurfContext.js";
-import Smurf from "./Smurf";
+import Smurf from "./SmurfForm";
 
 const SmurfList = () => {
   const { smurfList } = useContext(SmurfContext);
