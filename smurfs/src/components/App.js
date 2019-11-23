@@ -18,13 +18,23 @@ const App = () => {
 
   
 return (
-      <div className="App">
-        <h1>Welcome All Smurfs!!!</h1>
-     
-        <SmurfForm />
-      </div>
-      
-    );
+<div className="container">
+      <SmurfContext.Provider value={{ smurfList }}>
+        <FormContext.Provider value={{ formValue, handleChanges, newSmurf }}>
+          <header>
+            <h1>Welcome All Smurfs!</h1>
+            <p>
+              Check out other smurfs or register a new smurf!
+            </p>
+          </header>
+          <div className="sidebyside">
+            <SmurfForm />
+            <SmurfList />
+          </div>
+        </FormContext.Provider>
+      </SmurfContext.Provider>
+    </div>
+  );
 };
 
 
