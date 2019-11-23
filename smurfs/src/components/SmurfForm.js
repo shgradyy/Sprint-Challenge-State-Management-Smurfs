@@ -5,13 +5,12 @@ const SmurfForm = () => {
   const { formValue, handleChanges, newSmurf } = useContext(FormContext);
   return (
       <form onSubmit={newSmurf}>
-          <p>Hello Smurf!</p>
           <label htmlFor="name">Name please!</label>
-          <input type="text" name="name" value={formValue.name} placeholder="Smurfy McSmurf-Face" onChange={handleChanges} />
+          <input type="text" name="name" value={formValue.name} placeholder="Enter Smurf Name" onChange={handleChanges} />
           <label htmlFor="age">Age</label>
-          <input type="text" name="age" value={formValue.age} placeholder="0" onChange={handleChanges} />
+          <input type="text" name="age" value={formValue.age} placeholder="Enter Smurf's Age" onChange={handleChanges} />
           <label htmlFor="height">Height</label>
-          <input type="text" name="height" value={formValue.height} placeholder="1ft" onChange={handleChanges} />
+          <input type="text" name="height" value={formValue.height} placeholder="Enter Smurf's Height" onChange={handleChanges} />
           <button type="submit">Create Smurf</button>
       </form>
   )

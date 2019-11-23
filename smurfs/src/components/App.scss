@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-size: 62.5%;
-  background-image: url(https://i.pinimg.com/originals/10/b4/de/10b4de3aff307a13864ce35a2bf69375.jpg);
+  background-color: gray;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
@@ -63,15 +63,13 @@ $text: #525252;
   background: $secondary;
   max-width: 1000px;
   margin: 0 auto;
-  border-radius: 30px;
   padding: 50px;
-  box-shadow: 5px 5px 15px $primary;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: $text;
-  font-size: 1rem;
+  font-size: 2rem;
   height: 600px;
   overflow: hidden;
   header{
@@ -79,11 +77,12 @@ $text: #525252;
     margin-bottom: 30px;
     width: 80%;
     h1{
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: bold;
     }
     p{
       margin: 15px 0;
+      font-size: 1.5rem;
     }
   }
   .sidebyside{
@@ -105,7 +104,7 @@ $text: #525252;
       label{
         margin: 10px 0;
         font-size: 1.2rem;
-        color: $primary;
+        color: rgb(8, 23, 151);
       }
       input{
         border: 0;
@@ -116,7 +115,7 @@ $text: #525252;
       }
       button{
         border: 0;
-        background: $primary;
+        background: rgb(17, 17, 109);
         border-radius: 15px;
         color: white;
         font-size: 1rem;
