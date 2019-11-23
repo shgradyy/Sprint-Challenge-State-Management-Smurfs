@@ -16,6 +16,17 @@ const App = () => {
     id: ""
   });
 
+  useEffect(() => {
+    axios
+      .get("http://localhost:3333/smurfs")
+      .then(res => {
+        setSmurfList(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, []);
+
   
 return (
 <div className="container">
