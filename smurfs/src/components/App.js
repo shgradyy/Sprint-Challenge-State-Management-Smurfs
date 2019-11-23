@@ -16,6 +16,29 @@ const App = () => {
     id: ""
   });
 
+  const handleChanges = event => {
+    setFormValue({ ...formValue, [event.target.name]: event.target.value });
+  };
+
+  const newSmurf = event => {
+    event.preventDefault();
+    var smurfy = { ...formValue, id: Date.now() };
+    axios
+      .post("http://localhost:3333/smurfs", smurfy)
+      .then(res => {
+        setSmurfList(res.data);
+        setFormValue({
+          name: "",
+          age: "",
+          height: "",
+          id: ""
+        });
+      })
+      .catch(err => {
+        console.log("Error", err);
+      });
+  };
+
   useEffect(() => {
     axios
       .get("http://localhost:3333/smurfs")
